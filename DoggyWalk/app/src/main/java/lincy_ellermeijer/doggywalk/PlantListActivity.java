@@ -66,9 +66,10 @@ public class PlantListActivity extends AppCompatActivity {
         /**
          * CRUD Operations
          * */
-        // Inserting Plants
+        /*/ Manually inserting a plant
         Log.d("Insert: ", "Inserting ..");
         datasource.addPlant(new Plant("Aloe Vera", "Symptoms: ...", imageInByte));
+        */
 
         // Reading all plants from database
         List<Plant> plants = datasource.getAllPlants();

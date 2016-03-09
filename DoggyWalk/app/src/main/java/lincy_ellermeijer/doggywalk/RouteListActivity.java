@@ -66,9 +66,10 @@ public class RouteListActivity extends AppCompatActivity {
         /**
          * CRUD Operations
          * */
-        // Inserting Route
+        /*// Manually inserting a route
         Log.d("Insert: ", "Inserting ..");
         datasource.addRoute(new Route("Amsterdamse Bos", "Losloopgebied, Amsterdam - Noord-Holland", imageInByte));
+        */
 
         // Reading all routes from database
         List<Route> routes = datasource.getAllRoutes();
