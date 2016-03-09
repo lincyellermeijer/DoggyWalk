@@ -48,6 +48,10 @@ public class RouteListActivity extends AppCompatActivity {
         datasource = new DataSource(this);
         listView = (ListView) findViewById(R.id.route_list);
 
+        // If list is empty display text
+        TextView emptyView = (TextView) findViewById(R.id.route_list_empty);
+        listView.setEmptyView(emptyView);
+
         adapter = new RouteImageAdapter(this, R.layout.screen_routelist,
                 imageArray);
 

@@ -48,6 +48,10 @@ public class PlantListActivity extends AppCompatActivity {
         datasource = new DataSource(this);
         listView = (ListView) findViewById(R.id.plant_list);
 
+        // If list is empty display text
+        TextView emptyView = (TextView) findViewById(R.id.plant_list_empty);
+        listView.setEmptyView(emptyView);
+
         adapter = new PlantImageAdapter(this, R.layout.screen_plantlist,
                 imageArray);
 
