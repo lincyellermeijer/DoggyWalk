@@ -49,8 +49,9 @@ public class RouteListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.route_list);
 
         // If list is empty display text
-        TextView emptyView = (TextView) findViewById(R.id.route_list_empty);
+        /*TextView emptyView = (TextView) findViewById(R.id.route_list_empty);
         listView.setEmptyView(emptyView);
+        */
 
         adapter = new RouteImageAdapter(this, R.layout.screen_routelist,
                 imageArray);
@@ -70,10 +71,12 @@ public class RouteListActivity extends AppCompatActivity {
         /**
          * CRUD Operations
          * */
-        /*// Manually inserting a route
+        // Manually inserting a route
+        /*
         Log.d("Insert: ", "Inserting ..");
         datasource.addRoute(new Route("Amsterdamse Bos", "Losloopgebied, Amsterdam - Noord-Holland", imageInByte));
         */
+
 
         // Reading all routes from database
         List<Route> routes = datasource.getAllRoutes();
